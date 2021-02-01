@@ -6,15 +6,17 @@
 /*   By: keuclide <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/07 14:35:50 by keuclide          #+#    #+#             */
-/*   Updated: 2020/11/11 22:42:11 by keuclide         ###   ########.fr       */
+/*   Updated: 2020/12/10 14:48:38 by keuclide         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	pow(int e)
+
+
+static long long int	pow(long long int e)
 {
-	long z;
+	long long int	z;
 
 	z = 1;
 	while (e--)
@@ -22,7 +24,8 @@ static int	pow(int e)
 	return (z);
 }
 
-static void	ptnbr(long n, long z, int i, int fd)
+static void				ptnbr(long long int n, long long int z,
+int i, int fd)
 {
 	char m;
 
@@ -47,9 +50,9 @@ static void	ptnbr(long n, long z, int i, int fd)
 	}
 }
 
-static int	size(long v)
+static int				size(long long int v)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (v / 10 != 0)
@@ -61,11 +64,11 @@ static int	size(long v)
 	return (i);
 }
 
-static void	two(long n, int fd)
+static void				two(long long int n, int fd)
 {
-	char	m;
-	int		z;
-	int		i;
+	char			m;
+	long long int	z;
+	int				i;
 
 	i = 2;
 	z = 10;
@@ -78,13 +81,11 @@ static void	two(long n, int fd)
 	}
 }
 
-void		ft_putnbr_fd(int n, int fd)
+void					ft_putnbr_fd(long long int v, int fd)
 {
-	long	v;
-	int		i;
-	long	z;
+	int				i;
+	long long int	z;
 
-	v = n;
 	if (v < 0)
 	{
 		v *= -1;
