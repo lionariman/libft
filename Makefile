@@ -6,7 +6,7 @@
 #    By: keuclide <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/10/29 14:04:37 by keuclide          #+#    #+#              #
-#    Updated: 2021/02/02 00:21:25 by keuclide         ###   ########.fr        #
+#    Updated: 2021/02/02 00:39:35 by keuclide         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,6 +34,7 @@ SRCS = ft_isalpha.c \
 	   ft_bzero.c \
 	   ft_isprint.c \
 	   ft_memmove.c \
+	   ft_putnbr_base.c \
 	   ft_splitset.c \
 	   ft_split.c \
 	   ft_strlen.c \
